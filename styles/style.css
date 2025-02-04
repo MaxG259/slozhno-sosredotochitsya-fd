@@ -1,5 +1,5 @@
 .page {
-  font-family: var(--main-font, sans-serif); 
+  font-family: var(--main-font, sans-serif);
   font-size: var(--text-font-size);
   background-color: var(--bg-color);
   background-image: var(--bg-image);
@@ -16,7 +16,6 @@
 }
 
 /*ШАПКА*/
-
 .header {
   height: 100vh;
   min-height: 668px;
