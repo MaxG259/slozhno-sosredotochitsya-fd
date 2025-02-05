@@ -18,7 +18,7 @@
 /*ШАПКА*/
 .header {
   height: 100vh;
-  min-height: 668px;
+  min-block-size: 668px;
   position: relative;
   display: grid;
   grid-template-rows: 1fr min-content 1fr;
@@ -75,7 +75,7 @@
   width: 9px;
   height: 9px;
   background: var(--accent-color);
-  box-shadow: 0 0 5px 4px var(--accent-color);
+  box-shadow: 0 0 4px 2px var(--accent-color);
   border-radius: 50%;
 }
 
@@ -176,6 +176,7 @@
 .section__article {
   display: grid;
   gap: 10px;
+  align-self: start;
 }
 
 .section__article-title {
@@ -204,9 +205,13 @@
 }
 
 .article-text-link:hover {
-  text-decoration: underline;
+  border-block-end: 1px solid var(--text-color);
 }
 
+.article-text-link:focus-visible {
+  outline: none;
+  text-decoration: none;
+}
 .article-text-link:focus {
   border: 1px solid var(--text-color);
   outline: none;
@@ -299,18 +304,13 @@
     max-width: 236px;
   }
 
-  .section-first {
+  .section-why {
     grid-template-columns: 1fr 2fr;
     gap: 20px;
   }
 
-  .section-second {
+  .section-what {
     grid-template-columns: 1fr;
-  }
-
-  .section-three {
-    grid-template-columns: 1fr 2fr;
-    gap: 20px;
   }
     
   /*галерея*/
@@ -379,11 +379,12 @@
   }
 
   .header__text {
+    min-block-size: 70px;
+    max-width: 491px;
     justify-self: end;
     align-self: center;
     width: 50%;
-    padding-left: 11px;
-    padding-top: 10px;
+    margin-top: 10px;
   }
 
   /*мейн*/
@@ -391,12 +392,12 @@
     max-width: 315px;
   }
 
-  .section-first {
+  .section-why {
     grid-template-columns: 1fr 2fr;
     gap: 20px;
   }
 
-  .section-second {
+  .section-what {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 20px;
@@ -410,7 +411,7 @@
     max-height: 328px;
   }
 
-  .section-three {
+  .section-why {
     margin-top: 71px;
     grid-template-columns: 1fr 2fr;
     gap: 20px;

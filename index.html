@@ -7,20 +7,21 @@
     <meta name="color-scheme" content="dark light">
     <title>Сложно сосредоточиться</title>
     <link rel="stylesheet" href="./fonts/fonts.css" />
-    <link rel="stylesheet" href="./styles/globals.css" />
     <link rel="stylesheet" href="./styles/variables.css" />
+    <link rel="stylesheet" href="./styles/globals.css" />
     <link rel="stylesheet" href="./styles/style.css" />
     <link rel="stylesheet" href="./styles/dark.css" />
     <link rel="stylesheet" href="./styles/light.css" />
     <link rel="icon" href="./images/favicon.ico" sizes="any" />
     <link rel="icon" href="./images/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="./images/favicon.png">
     <link rel="mobile-icon" href="./images/mobile-icon.png" />
     <script src="./scripts/script.js"></script>
   </head>
   <body class="page">
     <!--Шапка-->
     <header class="header decorated-zone">
-      <div class="rec-label">REC</div>
+      <div class="rec-label" aria-hidden="true">REC</div>
 
       <!--Кнопки в шапке-->
       <nav class="header__theme-menu">
@@ -62,7 +63,7 @@
     <main class="main">
 
       <!--Первая секция-->
-      <section class="section section-first">
+      <section class="section section-why">
         <h2 class="section__title">Почему сосредоточиться так сложно</h2>
         <div class="section__div">
           <article class="section__article">
@@ -81,9 +82,9 @@
       </section>
 
       <!--Вторая секция-->
-      <section class="section main-section-second">
+      <section class="section">
         <h2 class="section__title">Что снижает концентрацию внимания?</h2>
-        <div class="section__div section-second">
+        <div class="section__div section-what">
           <article class="section__article">
             <h3 class="section__article-title title-decor">Многозадачность</h3>
             <p class="section__article-text">Как концентрация может снижаться из-за… концентрации? Любая стрессовая ситуация (и резко меняющийся мир в целом) заставляет наш мозг постоянно «сканировать» окружающую среду на предмет опасности. Например, читать новости вместо работы. Но быть собранными всё время — невозможно. Концентрация — мышца, и она может не выдержать, если не давать ей отдохнуть.
@@ -106,7 +107,7 @@
       </section>
 
       <!--Третья секция-->
-      <section class="section section-three">
+      <section class="section section-why">
         <h2 class="section__title">Как концентрироваться лучше, чем золотая рыбка (то есть дольше трёх секунд)</h2>
         <div class="section__div">
           <h3 class="section__article-title title-decor">5 простых (на самом деле не очень) советов</h3>
@@ -124,7 +125,7 @@
           </article>
           <article class="section__article">
             <h4 class="section__article-new-title title-decor">Прогуляйтесь</h4>
-            <p class="section__article-text">Или даже пробегитесь. Лучше найти парк или лес: один эксперимент показал, что созерцание природы повышает концентрацию, в то время как после просмотра городских пейзажей она наоборот понижается. Можно совместить прогулку с физическими упражнениями или бегом — так в мозг поступит ещё больше кислорода и он будет лучше работать. Но и простая двадцатиминутная прогулка — тоже отличный вариант.
+            <p class="section__article-text">Или даже пробегитесь. Лучше найти парк или лес: один эксперимент <a class="article-text-link" href="https://www.dana.org/article/multicosts-of-multitasking/" target="_blank">показал</a>, что созерцание природы повышает концентрацию, в то время как после просмотра городских пейзажей она наоборот понижается. Можно совместить прогулку с физическими упражнениями или бегом — так в мозг поступит ещё больше кислорода и он будет лучше работать. Но и простая двадцатиминутная прогулка — тоже отличный вариант.
 
             </p>
           </article>
