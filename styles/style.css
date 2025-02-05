@@ -312,6 +312,12 @@
   .section-what {
     grid-template-columns: 1fr;
   }
+
+  .section-how {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+  }
     
   /*галерея*/
   .section-gallery {
@@ -391,10 +397,6 @@
   
   .section__title {
     max-width: 315px;
-  }
-
-  .section__div {
-
   }
 
   .section-why {
