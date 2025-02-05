@@ -388,8 +388,13 @@
   }
 
   /*мейн*/
+  
   .section__title {
     max-width: 315px;
+  }
+
+  .section__div {
+
   }
 
   .section-why {
@@ -402,6 +407,13 @@
     grid-template-columns: 1fr 1fr 1fr;
     gap: 20px;
   }
+  
+  .section-how {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+    margin-top: 71px;
+  }
 
   .section__article-title {
     height: 23px;
@@ -409,12 +421,6 @@
 
   .section__article-text {
     max-height: 328px;
-  }
-
-  .section-why {
-    margin-top: 71px;
-    grid-template-columns: 1fr 2fr;
-    gap: 20px;
   }
 
   /*галерея (к счастью тут без неё)*/
